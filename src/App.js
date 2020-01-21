@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-/*test*/ /*test*/
+/*test*/ /*test ready for development*/
 function App() {
   return (
     <div className="App">
