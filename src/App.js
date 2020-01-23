@@ -5,10 +5,10 @@ import './App.css';
 
 function App() {
   const [ teams, setTeams ] = useState([ {
-    id: 1,
-    name: "Sir Walter",
-    email: "sirwalter@gmail.com",
-    role: "Knight"
+    id: Date.now(),
+    name: "",
+    email: "",
+    role: ""
   }
 ]);
 
