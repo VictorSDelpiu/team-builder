@@ -1,38 +1,34 @@
 import React, { useState } from 'react';
-import Team from "./components/Team";
-import TeamForm from "./components/TeamForm"
-import './App.css';
+import TeamCard from './components/TeamCard';
+import Form from './components/Form';
 
 function App() {
-  const [ teams, setTeams ] = useState([ {
-    id: Date.now(),
-    name: "",
-    email: "",
-    role: ""
-  }
-]);
 
-// lets us create a new team (create function that contains--> takes same as team)
-  const addNewTeam = team => {
-    const newTeam = {
-      // id: is unique 
-      id: Date.now(),
-      name: team.name,
-      email: team.email,
-      role: team.role
-    };
-    setTeams([...teams, newTeam]);
-  }
-  // spread operator: check if can change with useParams
+    //Initial value
+    const [teamMembers, setTeamMembers] = useState([{
+        id: 1,
+        name: 'Victor Sanchez',
+        email: 'victorsanchez@gmail.com',
+        role: 'Full Stack'
+    }]);
 
-  return (
-    <div className="App">
-      <h1>Team list</h1>
-      {/* // render props */}
-      <TeamForm addNewTeam = {addNewTeam} />
-      <Team teams={teams} />
-    </div>
-  );
+    //Format for applying card to new member
+    const addMember = card => {
+        const newCard = {
+            id: Date.now(),
+            name: card.name,
+            email: card.email,
+            role: card.role
+        };
+        setTeamMembers([...teamMembers, newCard]);
+    }
+
+    return (
+        <div>
+            <Form addMember={addMember} />
+            <TeamCard teamMembers={teamMembers} />
+        </div>
+    );
 }
 
 export default App;
