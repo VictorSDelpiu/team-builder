@@ -52,7 +52,7 @@ body,
 .App {
   font-family: 'Gelasio', serif;
   text-align: center;
-  background-image: linear-gradient(-315deg, #776aeb 40%,#5ffff7 100%);
+  background-image: linear-gradient(-315deg, #eb936a 40%,#ff44ef 100%);
   padding: 32px;
   letter-spacing: 2px
 }
@@ -92,8 +92,7 @@ input, textarea {
   border-radius: 4px;
 }
 button {
-  background: rgb(105, 240, 211);
-  background-image: linear-gradient(-320deg, rgb(100, 46, 185) 10%,rgb(40, 211, 253) 100%);
+  background: rgb(0, 0, 0);
   border: 0px;
   border-radius:20px;
   padding: 15px 7px;
