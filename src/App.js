@@ -6,9 +6,9 @@ import './App.css';
 function App() {
   const [ teams, setTeams ] = useState([ {
     id: Date.now(),
-    name: "",
-    email: "",
-    role: ""
+    name: "Victor Sanchez",
+    email: "victor@gmail.com",
+    role: "Full Stack"
   }
 ]);
 

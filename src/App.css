@@ -52,7 +52,7 @@ body,
 .App {
   font-family: 'Gelasio', serif;
   text-align: center;
-  background-image: linear-gradient(-315deg, #d6d0b6 100%,#1f8037 100%);
+  background-image: linear-gradient(-315deg, #eb936a 40%,#ff44ef 100%);
   padding: 32px;
   letter-spacing: 2px
 }
@@ -61,18 +61,20 @@ body,
   flex-wrap: wrap;
 }
 .team {
-  background: #d4d4d4;
+  background: #000000;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12), 0 5px 2px rgba(0, 0, 0, 0.24);
   width: 100%;
   max-width: 250px;
   padding: 10px;
   margin: 16px auto;
-  text-align: left;
+  text-align: center;
+  color:white;
 }
 
 h1,
 h2 {
   margin-top: 0;
+  color:white;
 }
 
 form {
@@ -86,23 +88,24 @@ input, textarea {
   padding: 15px 22px;
   margin: 10px 5px;
   box-sizing: border-box;  
-  border: 1px solid #DBD3D8;
+  border: 1px solid rgb(211, 219, 213);
   border-radius: 4px;
 }
 button {
-  background: #D77A61;
-  background-image: linear-gradient(-315deg, #D77A61 40%,#D77A61 100%);
-  border: 1px solid #4B5267;
-  padding: 10px 15px;
+  background: rgb(0, 0, 0);
+  border: 0px;
+  border-radius:20px;
+  padding: 15px 7px;
   font-size: 16px;
-  color: #191919;
+  color: #ffffff;
   box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.12), 0 2px 2px 1px rgba(0, 0, 0, 0.24);
   transition: all 0.2 ease-in;
 }
 button:hover {
   transform: translateY(-1px);
   box-shadow: 0 2px 6px 2px rgba(0, 0, 0, 0.12), 0 2px 3px 2px rgba(0, 0, 0, 0.24);
-  background: #ff65a3;
+  background: #000000;
+  color:#ffffff;
 }
 button:active {
   background: #ff7eb9;
@@ -112,6 +115,7 @@ button:active {
 
 label {
   margin-bottom: -12px;
-  text-align: left;
+  text-align: center;
   width: 200px;
+  color:white;
 }

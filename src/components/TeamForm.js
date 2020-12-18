@@ -2,7 +2,8 @@ import React, { useState } from "react";
 
 const TeamForm = props => {
   console.log("props", props);
-  const [team, setTeam] = useState({ name: "", email: "", role: "" });
+  const [team, setTeam] = 
+  useState({ name: "", email: "", role: "" });
 
   const handleChanges = e => {
     // console.log(team);
@@ -35,14 +36,14 @@ const TeamForm = props => {
         name="email"
         onChange={handleChanges}
         value={team.email}
-      />
-      <br /> <br />
-      <label htmlFor="role">Role</label>
-      <textarea
-        id="role"
-        name="role"
-        onChange={handleChanges}
-        value={team.role}
+        />
+        <br /> <br />
+        <label htmlFor="role">Role</label>
+        <textarea
+          id="role"
+          name="role"
+          onChange={handleChanges}
+          value={team.role}
       />
       <br /> <br />
       <button type="submit">Add Team Member</button>
